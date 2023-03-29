@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920.0px"
+   height="1080.0px"
+   viewBox="0 0 1920.0 1080.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="template.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
+  <style
+     id="style949">.undefined { fill:#aaaaaa; }
+.good { fill:#33d17a; }
+.fair { fill:#f6d32d; }
+.poor { fill:#e01b24; }
+.val {   }
+.inactive { opacity:0.4; }
+</style>
+  <sodipodi:namedview
+     id="namedview137"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.5"
+     inkscape:cx="1003"
+     inkscape:cy="483"
+     inkscape:window-width="1920"
+     inkscape:window-height="1050"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="geomag"
+     showguides="true">
+    <sodipodi:guide
+       position="45.032969,1026.5908"
+       orientation="1,0"
+       id="guide8409"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="622.65671,1026.5908"
+       orientation="1,0"
+       id="guide9389"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs132">
+    <rect
+       x="44.926434"
+       y="911.747"
+       width="577.73028"
+       height="81.171475"
+       id="rect11486" />
+    <rect
+       x="380.17203"
+       y="864.0694"
+       width="214.72442"
+       height="88.911799"
+       id="rect10573" />
+    <rect
+       x="702.64636"
+       y="883.22817"
+       width="473.34774"
+       height="167.42944"
+       id="rect9617" />
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="3.3239999"
+       markerHeight="3.8427744"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <linearGradient
+       id="linearGradient3163"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3161" />
+    </linearGradient>
+    <marker
+       style="overflow:visible"
+       id="TriangleStart-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="3.3239999"
+       markerHeight="3.8427744"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-2" />
+    </marker>
+    <rect
+       x="702.64636"
+       y="883.22815"
+       width="578.00787"
+       height="264.09497"
+       id="rect9617-3" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#272727;stroke-width:96;stroke-linejoin:bevel;fill-opacity:1"
+       id="rect366"
+       width="667.47668"
+       height="1080"
+       x="0"
+       y="0" />
+    <g
+       id="g8341"
+       transform="matrix(1.2678895,0,0,1.2678895,18.254364,-24.676628)"
+       style="display:inline;stroke-width:0.788712"
+       inkscape:label="clocks">
+      <g
+         id="clock-utc"
+         transform="translate(-1.6899949,27.863351)"
+         style="display:inline;stroke-width:0.788712"
+         inkscape:label="clock-utc">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:0.9;font-family:Cantarell;-inkscape-font-specification:Cantarell;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.788712;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="131.92558"
+           y="67.5159"
+           id="text5441-6-6"
+           inkscape:label="clock-utc-val"
+           class="val"><tspan
+             sodipodi:role="line"
+             x="131.92558"
+             y="67.5159"
+             id="tspan5443-7-2"
+             style="stroke-width:0.788712">Sun 2023-03-26</tspan><tspan
+             sodipodi:role="line"
+             x="131.92558"
+             y="110.7159"
+             id="tspan5447-5-9"
+             style="stroke-width:0.788712">13:58:42</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48px;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.788712;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="19.738609"
+           y="89.115898"
+           id="text6799"><tspan
+             sodipodi:role="line"
+             id="tspan6797"
+             x="19.738609"
+             y="89.115898"
+             style="stroke-width:0.788712">UTC</tspan></text>
+      </g>
+      <g
+         id="clock-msk"
+         transform="translate(-2.5059949,0.59002643)"
+         style="stroke-width:0.788712"
+         inkscape:label="clock-msk">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;line-height:0.9;font-family:Cantarell;-inkscape-font-specification:Cantarell;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.788712;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="132.74159"
+           y="196.12111"
+           id="text5441-6"
+           inkscape:label="clock-msk-val"
+           class="val"><tspan
+             sodipodi:role="line"
+             x="132.74159"
+             y="196.12111"
+             id="tspan5443-7"
+             style="stroke-width:0.788712">Sun 2023-03-26</tspan><tspan
+             sodipodi:role="line"
+             x="132.74159"
+             y="239.32111"
+             id="tspan5447-5"
+             style="stroke-width:0.788712">16:58:42</tspan></text>
+        <g
+           id="g6873"
+           style="stroke-width:0.788712"
+           inkscape:label="clock-msk-label">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48px;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.788712;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+             x="19.738609"
+             y="217.69711"
+             id="text6799-3"><tspan
+               sodipodi:role="line"
+               x="19.738609"
+               y="217.69711"
+               id="tspan6861"
+               style="stroke-width:0.788712">MSK</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:Cantarell;-inkscape-font-specification:Cantarell;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.788712;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+             x="22.114609"
+             y="236.15311"
+             id="text6867"><tspan
+               sodipodi:role="line"
+               id="tspan6865"
+               x="22.114609"
+               y="236.15311"
+               style="stroke-width:0.788712">(UTC+3)</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g8905"
+       inkscape:label="hf-cond"
+       style="display:inline;stroke-width:0.656111"
+       transform="matrix(1.524133,0,0,1.524133,-23.49162,-224.02132)">
+      <text
+         xml:space="preserve"
+         style="display:inline;stroke-width:3.46713;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.6517px;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+         x="20.732819"
+         y="334.44867"
+         id="text8345"
+         transform="matrix(1.2678895,0,0,1.2678895,15.077039,-23.928542)"><tspan
+           sodipodi:role="line"
+           id="tspan8343"
+           style="font-size:33.6517px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.46713;stroke-dasharray:none"
+           x="20.732819"
+           y="334.44867">HF Conditions</tspan></text>
+      <g
+         id="sfi"
+         inkscape:label="sfi"
+         style="display:inline;stroke-width:0.790913"
+         transform="matrix(0.8295616,0,0,0.8295616,7.6063178,80.656119)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:end;text-anchor:end;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.29911;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="502.92313"
+           y="559.09521"
+           id="text8884-5"
+           inkscape:label="sfi-val"
+           class="val"
+           data-key="sfi"><tspan
+             sodipodi:role="line"
+             id="tspan8882-4"
+             x="502.92313"
+             y="559.09521"
+             style="text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke-width:5.29911">?</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:Cantarell;-inkscape-font-specification:Cantarell;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.29911;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="43.561295"
+           y="592.22394"
+           id="text8407-6-1"
+           transform="translate(-0.1920003,-33.182065)"><tspan
+             sodipodi:role="line"
+             id="tspan8405-3-5"
+             x="43.561295"
+             y="592.22394"
+             style="stroke-width:5.29911">Solar flux index</tspan></text>
+      </g>
+      <g
+         id="geomag"
+         inkscape:label="geomag"
+         style="display:inline;stroke-width:0.790913"
+         transform="matrix(0.8295616,0,0,0.8295616,7.0709049,125.33391)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:end;text-anchor:end;display:inline;fill-opacity:1;stroke:none;stroke-width:5.29911;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="503.41919"
+           y="559.04187"
+           id="text8884-5-6"
+           inkscape:label="geomag-val"
+           class="val  undefined"
+           data-key="geomag"><tspan
+             sodipodi:role="line"
+             id="tspan8882-4-5"
+             x="503.41919"
+             y="559.04187"
+             style="text-align:end;text-anchor:end;stroke-width:5.29911">Unknown</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:Cantarell;-inkscape-font-specification:Cantarell;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.29911;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="43.561295"
+           y="592.22394"
+           id="text8407-6-1-6"
+           transform="translate(-0.1920003,-33.182065)"><tspan
+             sodipodi:role="line"
+             id="tspan8405-3-5-9"
+             x="43.561295"
+             y="592.22394"
+             style="stroke-width:5.29911">Geomag. field</tspan></text>
+      </g>
+      <g
+         id="noisefl"
+         style="display:inline;stroke-width:0.790913"
+         inkscape:label="noisefl"
+         transform="matrix(0.8295616,0,0,0.8295616,7.7788005,53.129553)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:end;text-anchor:end;opacity:1;fill-opacity:1;stroke:none;stroke-width:5.29911;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="502.71521"
+           y="538.42017"
+           id="text8884"
+           inkscape:label="noisefl-val"
+           class="val  undefined"
+           data-key="noise_floor"><tspan
+             sodipodi:role="line"
+             id="tspan8882"
+             x="502.71521"
+             y="538.42017"
+             style="text-align:end;text-anchor:end;stroke-width:5.29911">S?-S?</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:Cantarell;-inkscape-font-specification:Cantarell;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.29911;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="40.894623"
+           y="538.36682"
+           id="text8407-6"><tspan
+             sodipodi:role="line"
+             id="tspan8405-3"
+             x="40.894623"
+             y="538.36682"
+             style="stroke-width:5.29911">Noise floor</tspan></text>
+      </g>
+      <g
+         id="band-prop"
+         transform="translate(1.3039833,-1.8875977)"
+         inkscape:label="band-prop"
+         style="display:inline;stroke-width:0.656111">
+        <g
+           id="prop-night"
+           transform="translate(96.637138,0.21999104)"
+           style="stroke-width:0.656111"
+           inkscape:label="prop-night">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:Cantarell;-inkscape-font-specification:Cantarell;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.39594;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+             x="239.33719"
+             y="432.70459"
+             id="text8413-0"><tspan
+               sodipodi:role="line"
+               id="tspan8411-3"
+               x="239.33719"
+               y="432.70459"
+               style="stroke-width:4.39594">Night</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Cantarell;-inkscape-font-specification:Cantarell;fill-opacity:1;stroke:none;stroke-width:4.39594;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+             x="238.60118"
+             y="464.97922"
+             id="text8458-6"
+             inkscape:label="prop-night-val"
+             class="val    undefined"
+             data-key="prop_night"><tspan
+               sodipodi:role="line"
+               id="tspan8456-1"
+               x="238.60118"
+               y="464.97922"
+               style="stroke-width:4.39594">Unkn</tspan></text>
+        </g>
+        <g
+           id="prop-day"
+           inkscape:label="prop-day"
+           style="stroke-width:0.656111">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:Cantarell;-inkscape-font-specification:Cantarell;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.39594;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+             x="239.33719"
+             y="432.70459"
+             id="text8413"><tspan
+               sodipodi:role="line"
+               id="tspan8411"
+               x="239.33719"
+               y="432.70459"
+               style="stroke-width:4.39594">Day</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Cantarell;-inkscape-font-specification:Cantarell;fill-opacity:1;stroke:none;stroke-width:4.39594;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+             x="238.60118"
+             y="464.97922"
+             id="text8458"
+             inkscape:label="prop-day-val"
+             class="val  undefined"
+             data-key="prop_day"><tspan
+               sodipodi:role="line"
+               id="tspan8456"
+               x="238.60118"
+               y="464.97922"
+               style="stroke-width:4.39594">Unkn</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:Cantarell;-inkscape-font-specification:Cantarell;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.39594;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="43.070625"
+           y="468.28113"
+           id="text8407"
+           transform="translate(-1.4959835,-15.065877)"><tspan
+             sodipodi:role="line"
+             id="tspan8405"
+             x="43.070625"
+             y="468.28113"
+             style="stroke-width:4.39594">80-40m</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g8144"
+       transform="translate(19.60264,8.7005892)"
+       inkscape:label="faq">
+      <g
+         id="g11768">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48px;font-family:Cantarell;-inkscape-font-specification:'Cantarell Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+           x="62.951778"
+           y="1034.1622"
+           id="text6942"><tspan
+             sodipodi:role="line"
+             id="tspan6940"
+             x="62.951778"
+             y="1034.1622">FAQ in the description!</tspan></text>
+        <path
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:6.7;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
+           d="m 588.40829,999.92802 v 23.98038"
+           id="path7007"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:6.7;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-1)"
+           d="m 39.863115,999.92805 v 23.98035"
+           id="path7007-7"
+           sodipodi:nodetypes="cc" />
+      </g>
+      <text
+         xml:space="preserve"
+         id="text11484"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1.1;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:justify;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect11486);display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6.7;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+         transform="translate(-19.60264,-37.831289)"><tspan
+           x="44.925781"
+           y="931.4984"
+           id="tspan1092"><tspan
+             dx="0 0 0 0.21636391 0 0 0 0.21636581 0 0 0 0 0 0 0 0 0.21636963 0 0 0 0 0 0 0.21635437 0 0 0 0 0 0.21635437 0 0 0 0 0 0 0.21635437 0 0 0 0 0 0 0 0 0 0.21635437"
+             id="tspan1090">If the receiver window stays black, something crashed. </tspan></tspan><tspan
+           x="44.925781"
+           y="957.89842"
+           id="tspan1096"><tspan
+             dx="0 0 0 0 0 2.3666725 0 0 2.3666687 0 0 0 0 0 0 0 0 2.3666687 0 0 0 2.3666687 0 0 0 2.366684 0 0 0 0 0 0 0 2.366684 0 0 2.366684 0 0 0 2.3666534 0 0 0 0 0 0 2.3666534 0 0 0 0 2.3666229"
+             id="tspan1094">This is unlikely but may happen. If so, please wait for </tspan></tspan><tspan
+           x="44.925781"
+           y="984.29844"
+           id="tspan1098">the next reload.</tspan></text>
+      <text
+         xml:space="preserve"
+         id="text9615"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;line-height:0;font-family:Cantarell;-inkscape-font-specification:Cantarell;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect9617);display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:6.7;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
+         transform="translate(-677.56815,-184.86963)"
+         x="0"
+         y="0"><tspan
+           x="702.64648"
+           y="907.37019"
+           id="tspan1102"><tspan
+             style="line-height:1.1"
+             id="tspan1100">Every 30 minutes, the stream will </tspan></tspan><tspan
+           x="702.64648"
+           y="939.63679"
+           id="tspan1106"><tspan
+             style="line-height:1.1"
+             id="tspan1104">automatically reload the receiver.
+</tspan></tspan><tspan
+           x="702.64648"
+           y="971.90339"
+           id="tspan1110"><tspan
+             style="line-height:1.1"
+             id="tspan1108">When that happens, it will go black </tspan></tspan><tspan
+           x="702.64648"
+           y="1004.17"
+           id="tspan1114"><tspan
+             style="line-height:1.1"
+             id="tspan1112">for a short time, then the waterfall </tspan></tspan><tspan
+           x="702.64648"
+           y="1036.4366"
+           id="tspan1118"><tspan
+             style="line-height:1.1"
+             id="tspan1116">should start building up again.</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.1;font-family:Cantarell;-inkscape-font-specification:Cantarell;fill:#ffffff;fill-opacity:1;stroke-width:6.7;stroke-linejoin:bevel"
+         x="23.712992"
+         y="978.15399"
+         id="text1268"><tspan
+           sodipodi:role="line"
+           id="tspan1266"
+           x="23.712992"
+           y="978.15399">HF propagation data from https://www.hamqsl.com/solar.html.</tspan></text>
+    </g>
+  </g>
+  <metadata
+     id="metadata501">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

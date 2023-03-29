@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script>
+        // yes 0 is Sunday. why
+        const Weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+        const loadedData = {
+            prop_day: null, prop_day_color: null,
+            prop_night: null, prop_night_color: null,
+            noise_floor: null, noise_floor_color: null,
+            sfi: null, sfi_color: null,
+            geomag: null, geomag_color: null
+        }
+
+        window.addEventListener("load", () => {
+            const statusbar = document.querySelector("#status");
+            statusbar.style.display = "none";
+
+            // set up the animation listeners (to know when to update the fields)
+            document.querySelectorAll("svg#SVGRoot .val").forEach(el => el.addEventListener("animationend", ev => {
+                if (ev.target.classList.contains("fade-out")) {
+                    ev.target.children[0].textContent = loadedData[ev.target.getAttribute("data-key")];
+                    const color = loadedData[ev.target.getAttribute("data-key")+"_color"];
+                    if (color) {
+                        // set the color class
+                        // remove all the other ones
+                        ["good", "fair", "poor", "undefined"].forEach(c => c !== color && ev.target.classList.remove(c));
+                        // add the one requested
+                        ev.target.classList.add(color);
+                    }
+
+                    // start fadein
+                    ev.target.classList.remove("fade-out");
+                    ev.target.getAnimations().forEach(an => an.cancel()); // needs a kick apparently
+                    ev.target.classList.add("fade-in");
+                } else if (ev.target.classList.contains("fade-in"))
+                    ev.target.classList.remove("fade-in");
+            }));
+
+            // update HF conditions display
+            const updateConditions = async () => {
+                setTimeout(updateConditions, 60 * 60 * 1000); // rerun every hour
+
+                statusbar.textContent = "* loading data...";
+                statusbar.style.display = "block";
+
+                const data = await fetch("/propdata")
+                    .then(r => r.text())
+                    .then(xml => new DOMParser().parseFromString(xml, "text/xml"));
+
+                Object.assign(loadedData, {
+                    prop_day: data.querySelector("calculatedconditions band[name='80m-40m'][time='day']").textContent,
+                    prop_night: data.querySelector("calculatedconditions band[name='80m-40m'][time='night']").textContent,
+                    noise_floor: data.querySelector("signalnoise").textContent,
+                    sfi: data.querySelector("solarflux").textContent
+                });
+
+                // we can use kindex for geomag i believe it's literally the same thing
+                const kindexVal = parseInt(data.querySelector("kindex").textContent.trim()); // WHY does it have spaces. in the value
+                Object.assign(loadedData, [
+                    {geomag: "Inactive",    geomag_color: "good"},
+                    {geomag: "Very quiet",  geomag_color: "good"},
+                    {geomag: "Quiet",       geomag_color: "good"},
+                    {geomag: "Unsettled",   geomag_color: "fair"},
+                    {geomag: "Active",      geomag_color: "fair"},
+                    {geomag: "Min. storm",  geomag_color: "poor"},
+                    {geomag: "Maj. storm",  geomag_color: "poor"},
+                    {geomag: "Sevr. storm", geomag_color: "poor"},
+                    {geomag: "Extr. storm", geomag_color: "poor"}
+                ][kindexVal]);
+
+                const CondColorMap = {Good: "good", Fair: "fair", Poor: "poor"};
+                Object.assign(loadedData, {
+                    prop_day_color: CondColorMap[loadedData.prop_day] || "fair",
+                    prop_night_color: CondColorMap[loadedData.prop_night] || "fair",
+                    noise_floor_color: ["good", "good", "fair", "poor", "poor"][parseInt(loadedData.noise_floor.at(-1))]
+                });
+
+                //console.table(loadedData);
+                setTimeout(() => statusbar.style.display = "none", 200);
+
+                // fire the animations!!
+                document.querySelectorAll("svg#SVGRoot .val[data-key]")
+                    .forEach(e => e.classList.add("fade-out"));
+            }
+            updateConditions();
+
+            const clockUTC = document.querySelector("#clock-utc .val");
+            const clockMSK = document.querySelector("#clock-msk .val");
+
+            // update clocks
+            const updateClocks = () => {
+                // Javascript(tm)
+                const now = new Date();
+                clockUTC.children[0].textContent = `${Weekdays[now.getUTCDay()]} ${now.toISOString().slice(0, 10)}`;
+                clockUTC.children[1].textContent = now.toISOString().slice(11, 19);
+
+                const dateMSK = new Date(now.getTime() + 3 * 60 * 60 * 1000);
+                // UTC time in dateMSK is now MSK time
+                clockMSK.children[0].textContent = `${Weekdays[dateMSK.getUTCDay()]} ${dateMSK.toISOString().slice(0, 10)}`;
+                clockMSK.children[1].textContent = dateMSK.toISOString().slice(11, 19);
+
+                window.requestAnimationFrame(updateClocks);
+            }
+            updateClocks();
+        });
+    </script>
+    <style>
+        #status {
+            position: absolute;
+            left: 0; top: 0;
+            width: 667px;
+            margin: 0;
+            padding: 0 1em;
+            box-sizing: border-box;
+            text-align: center;
+
+            color: white;
+            font-family: Cantarell;
+            font-size: 22pt;
+        }
+        @keyframes fade {
+            0%   { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .fade-out, .fade-in {
+            animation-name: fade;
+            animation-duration: 0.5s;
+            animation-timing-function: cubic-bezier(1,0,0,1);
+        }
+        .fade-out { animation-direction: normal;  }
+        .fade-in  { animation-direction: reverse; }
+    </style>
+</head>
+<body style="margin: 0;">
+    <p id="status">* loading...</p>
+@@INSERT@@
+</body>
+</html>
