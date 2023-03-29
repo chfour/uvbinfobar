@@ -6,6 +6,8 @@
         // yes 0 is Sunday. why
         const Weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
+        let lastLoad = "<none>";
+
         const loadedData = {
             prop_day: null, prop_day_color: null,
             prop_night: null, prop_night_color: null,
@@ -46,44 +48,56 @@
                 statusbar.textContent = "* loading data...";
                 statusbar.style.display = "block";
 
-                const data = await fetch("/propdata")
-                    .then(r => r.text())
-                    .then(xml => new DOMParser().parseFromString(xml, "text/xml"));
+                try {
+                    const data = await fetch("/propdata")
+                        .then(r => {
+                            if (!r.ok) throw Error(`response code: ${r.status} ${r.statusText}`);
+                            return r;
+                        })
+                        .then(r => r.text())
+                        .then(xml => new DOMParser().parseFromString(xml, "text/xml"));
 
-                Object.assign(loadedData, {
-                    prop_day: data.querySelector("calculatedconditions band[name='80m-40m'][time='day']").textContent,
-                    prop_night: data.querySelector("calculatedconditions band[name='80m-40m'][time='night']").textContent,
-                    noise_floor: data.querySelector("signalnoise").textContent,
-                    sfi: data.querySelector("solarflux").textContent
-                });
+                    Object.assign(loadedData, {
+                        prop_day: data.querySelector("calculatedconditions band[name='80m-40m'][time='day']").textContent,
+                        prop_night: data.querySelector("calculatedconditions band[name='80m-40m'][time='night']").textContent,
+                        noise_floor: data.querySelector("signalnoise").textContent,
+                        sfi: data.querySelector("solarflux").textContent
+                    });
 
-                // we can use kindex for geomag i believe it's literally the same thing
-                const kindexVal = parseInt(data.querySelector("kindex").textContent.trim()); // WHY does it have spaces. in the value
-                Object.assign(loadedData, [
-                    {geomag: "Inactive",    geomag_color: "good"},
-                    {geomag: "Very quiet",  geomag_color: "good"},
-                    {geomag: "Quiet",       geomag_color: "good"},
-                    {geomag: "Unsettled",   geomag_color: "fair"},
-                    {geomag: "Active",      geomag_color: "fair"},
-                    {geomag: "Min. storm",  geomag_color: "poor"},
-                    {geomag: "Maj. storm",  geomag_color: "poor"},
-                    {geomag: "Sevr. storm", geomag_color: "poor"},
-                    {geomag: "Extr. storm", geomag_color: "poor"}
-                ][kindexVal]);
+                    // we can use kindex for geomag i believe it's literally the same thing
+                    const kindexVal = parseInt(data.querySelector("kindex").textContent.trim()); // WHY does it have spaces. in the value
+                    Object.assign(loadedData, [
+                        {geomag: "Inactive",    geomag_color: "good"},
+                        {geomag: "Very quiet",  geomag_color: "good"},
+                        {geomag: "Quiet",       geomag_color: "good"},
+                        {geomag: "Unsettled",   geomag_color: "fair"},
+                        {geomag: "Active",      geomag_color: "fair"},
+                        {geomag: "Min. storm",  geomag_color: "poor"},
+                        {geomag: "Maj. storm",  geomag_color: "poor"},
+                        {geomag: "Sevr. storm", geomag_color: "poor"},
+                        {geomag: "Extr. storm", geomag_color: "poor"}
+                    ][kindexVal]);
 
-                const CondColorMap = {Good: "good", Fair: "fair", Poor: "poor"};
-                Object.assign(loadedData, {
-                    prop_day_color: CondColorMap[loadedData.prop_day] || "fair",
-                    prop_night_color: CondColorMap[loadedData.prop_night] || "fair",
-                    noise_floor_color: ["good", "good", "fair", "poor", "poor"][parseInt(loadedData.noise_floor.at(-1))]
-                });
+                    const CondColorMap = {Good: "good", Fair: "fair", Poor: "poor"};
+                    Object.assign(loadedData, {
+                        prop_day_color: CondColorMap[loadedData.prop_day] || "fair",
+                        prop_night_color: CondColorMap[loadedData.prop_night] || "fair",
+                        noise_floor_color: ["good", "good", "fair", "poor", "poor"][parseInt(loadedData.noise_floor.at(-1))]
+                    });
 
-                //console.table(loadedData);
-                setTimeout(() => statusbar.style.display = "none", 200);
+                    //console.table(loadedData);
+                    setTimeout(() => statusbar.style.display = "none", 200);
 
-                // fire the animations!!
-                document.querySelectorAll("svg#SVGRoot .val[data-key]")
-                    .forEach(e => e.classList.add("fade-out"));
+                    // fire the animations!!
+                    document.querySelectorAll("svg#SVGRoot .val[data-key]")
+                        .forEach(e => e.classList.add("fade-out"));
+
+                    lastLoad = new Date().toISOString();
+                } catch (e) {
+                    console.error(e);
+                    statusbar.textContent = `loading failed, last successful load: ${lastLoad}\n${e.name}: ${e.message}`;
+                    return;
+                }
             }
             updateConditions();
 
@@ -119,7 +133,8 @@
 
             color: white;
             font-family: Cantarell;
-            font-size: 22pt;
+            font-size: 16pt;
+            white-space: pre;
         }
         @keyframes fade {
             0%   { opacity: 1; }
@@ -135,7 +150,7 @@
     </style>
 </head>
 <body style="margin: 0;">
-    <p id="status">* loading...</p>
+    <span id="status">* loading...</span>
 @@INSERT@@
 </body>
 </html>
