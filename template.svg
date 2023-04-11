@@ -11,6 +11,7 @@
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -34,15 +35,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="1003"
-     inkscape:cy="483"
-     inkscape:window-width="1920"
-     inkscape:window-height="1050"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="geomag"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="66.291261"
+     inkscape:cy="1030.9617"
+     inkscape:window-width="1424"
+     inkscape:window-height="1027"
+     inkscape:window-x="2350"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g11768"
      showguides="true">
     <sodipodi:guide
        position="45.032969,1026.5908"
@@ -75,25 +76,6 @@
        width="473.34774"
        height="167.42944"
        id="rect9617" />
-    <marker
-       style="overflow:visible"
-       id="TriangleStart"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="TriangleStart"
-       markerWidth="3.3239999"
-       markerHeight="3.8427744"
-       viewBox="0 0 5.3244081 6.1553851"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         transform="scale(0.5)"
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135" />
-    </marker>
     <linearGradient
        id="linearGradient3163"
        inkscape:swatch="solid">
@@ -109,24 +91,18 @@
        refY="0"
        orient="auto-start-reverse"
        inkscape:stockid="TriangleStart"
-       markerWidth="3.3239999"
-       markerHeight="3.8427744"
-       viewBox="0 0 5.3244081 6.1553851"
+       markerWidth="3.32399984"
+       markerHeight="3.84277438"
+       viewBox="0 0 5.3244081 6.15538509"
        inkscape:isstock="true"
        inkscape:collect="always"
        preserveAspectRatio="xMidYMid">
       <path
          transform="scale(0.5)"
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         style="fill:white;/*literal chrome skill issue*/fill-rule:evenodd;stroke:white;stroke-width:1pt"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path135-2" />
     </marker>
-    <rect
-       x="702.64636"
-       y="883.22815"
-       width="578.00787"
-       height="264.09497"
-       id="rect9617-3" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -440,15 +416,16 @@
              x="62.951778"
              y="1034.1622">FAQ in the description!</tspan></text>
         <path
-           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:6.7;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
-           d="m 588.40829,999.92802 v 23.98038"
-           id="path7007"
-           sodipodi:nodetypes="cc" />
-        <path
            style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:6.7;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart-1)"
-           d="m 39.863115,999.92805 v 23.98035"
+           d="m 38.303623,999.92805 v 23.98035"
            id="path7007-7"
            sodipodi:nodetypes="cc" />
+        <use
+           x="0"
+           y="0"
+           xlink:href="#path7007-7"
+           id="use386"
+           transform="translate(551.87715)" />
       </g>
       <text
          xml:space="preserve"
@@ -457,17 +434,17 @@
          transform="translate(-19.60264,-37.831289)"><tspan
            x="44.925781"
            y="931.4984"
-           id="tspan1092"><tspan
+           id="tspan1400"><tspan
              dx="0 0 0 0.21636391 0 0 0 0.21636581 0 0 0 0 0 0 0 0 0.21636963 0 0 0 0 0 0 0.21635437 0 0 0 0 0 0.21635437 0 0 0 0 0 0 0.21635437 0 0 0 0 0 0 0 0 0 0.21635437"
-             id="tspan1090">If the receiver window stays black, something crashed. </tspan></tspan><tspan
+             id="tspan1398">If the receiver window stays black, something crashed. </tspan></tspan><tspan
            x="44.925781"
            y="957.89842"
-           id="tspan1096"><tspan
+           id="tspan1404"><tspan
              dx="0 0 0 0 0 2.3666725 0 0 2.3666687 0 0 0 0 0 0 0 0 2.3666687 0 0 0 2.3666687 0 0 0 2.366684 0 0 0 0 0 0 0 2.366684 0 0 2.366684 0 0 0 2.3666534 0 0 0 0 0 0 2.3666534 0 0 0 0 2.3666229"
-             id="tspan1094">This is unlikely but may happen. If so, please wait for </tspan></tspan><tspan
+             id="tspan1402">This is unlikely but may happen. If so, please wait for </tspan></tspan><tspan
            x="44.925781"
            y="984.29844"
-           id="tspan1098">the next reload.</tspan></text>
+           id="tspan1406">the next reload.</tspan></text>
       <text
          xml:space="preserve"
          id="text9615"
@@ -477,30 +454,30 @@
          y="0"><tspan
            x="702.64648"
            y="907.37019"
-           id="tspan1102"><tspan
+           id="tspan1410"><tspan
              style="line-height:1.1"
-             id="tspan1100">Every 30 minutes, the stream will </tspan></tspan><tspan
+             id="tspan1408">Every 30 minutes, the stream will </tspan></tspan><tspan
            x="702.64648"
            y="939.63679"
-           id="tspan1106"><tspan
+           id="tspan1414"><tspan
              style="line-height:1.1"
-             id="tspan1104">automatically reload the receiver.
+             id="tspan1412">automatically reload the receiver.
 </tspan></tspan><tspan
            x="702.64648"
            y="971.90339"
-           id="tspan1110"><tspan
+           id="tspan1418"><tspan
              style="line-height:1.1"
-             id="tspan1108">When that happens, it will go black </tspan></tspan><tspan
+             id="tspan1416">When that happens, it will go black </tspan></tspan><tspan
            x="702.64648"
            y="1004.17"
-           id="tspan1114"><tspan
+           id="tspan1422"><tspan
              style="line-height:1.1"
-             id="tspan1112">for a short time, then the waterfall </tspan></tspan><tspan
+             id="tspan1420">for a short time, then the waterfall </tspan></tspan><tspan
            x="702.64648"
            y="1036.4366"
-           id="tspan1118"><tspan
+           id="tspan1426"><tspan
              style="line-height:1.1"
-             id="tspan1116">should start building up again.</tspan></tspan></text>
+             id="tspan1424">should start building up again.</tspan></tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.1;font-family:Cantarell;-inkscape-font-specification:Cantarell;fill:#ffffff;fill-opacity:1;stroke-width:6.7;stroke-linejoin:bevel"
