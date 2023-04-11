@@ -6,6 +6,7 @@
 			header_up Host {upstream_hostport}
 		}
 	}
+	templates
 	file_server {
 		root .
 	}
